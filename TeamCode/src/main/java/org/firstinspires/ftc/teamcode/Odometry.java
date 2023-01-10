@@ -31,10 +31,9 @@ public class Odometry  {
 
     public double headingCorrection=0;
 
-
-    final static double ENCODER_COUNTS_PER_INCH = 4096.0/(2.0*Math.PI*1.0);
     final static double RADIUS = 2.3465/2;  //6.4054;
-    final static double BENCODER_RADIUS = 0.25; //6.758......1; //mm //.75
+    final static double BENCODER_RADIUS = 0.75/2; //6.758......1; //mm //.75
+    final static double ENCODER_COUNTS_PER_INCH = (4096*3)/(5*(2.0*Math.PI*1.0));
     Vector2D fieldCentricDelta;
     Vector2D robotCentricDelta;
 
